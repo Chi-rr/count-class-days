@@ -82,7 +82,7 @@ const determinArgv = (argv) => {
       calenderId: calenderId
     }
 
-    fs.writeFileSync('calendar-config.json', JSON.stringify(data, null, ' '))
+    fs.writeFileSync('./node_modules/count-class-days/calendar-config.json', JSON.stringify(data, null, ' '))
   } else {
     question()
   }

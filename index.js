@@ -38,7 +38,7 @@ const numberOfTimes = (params, subject) => {
 
 const timePeriod = (start, end, subject) => {
   const timeMin = start + 'T06:00:00+09:00'
-  const timeMax = end + 'T06:00:00+09:00'
+  const timeMax = end + 'T23:59:59+09:00'
   const params = { timeMin, timeMax }
   numberOfTimes(params, subject)
 }
